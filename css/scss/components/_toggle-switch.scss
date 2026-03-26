@@ -1,0 +1,51 @@
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    user-select: none;
+    cursor: pointer;
+
+    &:focus-visible {
+        @include focus-style;
+    }
+
+    .toggle-switch-input {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        opacity: 0;
+
+        &:checked + .toggle-switch-inner {
+            background-color: $color-background-light;
+
+            &:before {
+                transform: translateX(43px);
+            }
+        }
+    }
+
+    .toggle-switch-inner {
+        position: relative;
+        display: inline-block;
+        width: 93px;
+        height: 50px;
+        vertical-align: top;
+        background-color: $color-background-brand;
+        border-radius: 73px;
+        transition: 0.2s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: $color-background;
+            border-radius: 50%;
+            transition: 0.15s;
+        }
+    }
+}

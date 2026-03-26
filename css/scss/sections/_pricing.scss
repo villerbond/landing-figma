@@ -1,0 +1,169 @@
+.pricing {
+    background-color: $color-background;
+
+    .pricing-container {
+        padding: 90px 10vw;
+        overflow: hidden;
+
+        .pricing-title {
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: $font-primary;
+            text-align: center;
+            color: $color-text;
+        }
+
+        .pricing-subtitle {
+            max-width: 500px;
+            margin: 40px auto 0 auto;
+            font-family: $font-primary;
+            text-align: center;
+            color: $color-text;
+        }
+
+        .pricing-toggle {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 500px;
+            margin: 40px auto 0 auto;
+            padding: 10px 0;
+            font-family: $font-primary;
+
+            @media (max-width: $breakpoint-tablet-sm) {
+                flex-direction: column;
+            }
+
+            .pricing-toggle-label {
+                color: $color-text;
+            }
+
+            .pricing-toggle-label-wrapper {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .pricing-toggle-discount {
+                    position: absolute;
+                    right: -105px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90px;
+                    height: 25px;
+                    color: $color-text;
+                    background-color: $color-appendix;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .pricing-tabs {
+            display: flex;
+            justify-content: space-between;
+            max-width: 880px;
+            margin: 70px auto 0 auto;
+
+            .pricing-tab {
+                width: 50%;
+                padding-bottom: 10px;
+                border-bottom: 4px solid $color-border-light;
+
+                &.active {
+                    border-color: $color-background-brand;
+                }
+            }
+        }
+
+        .pricing-plans {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            transition: all 0.3s ease;
+
+            &.active {
+                display: flex;
+                opacity: 1;
+            }
+
+            &:not(.active) {
+                display: none;
+                opacity: 0;
+            }
+
+            @media (max-width: $breakpoint-laptop) {
+                justify-content: space-around;
+            }
+
+            .pricing-plan {
+                max-width: 300px;
+                margin-top: 70px;
+                padding: max(20px, 2.6%);
+                background-color: $color-background;
+                border: 2px solid $color-border-light;
+                border-radius: 15px;
+                box-shadow: $shadow-inner;
+                font-family: $font-primary;
+                text-align: left;
+                transition: transform 0.3s ease, border-color 0.3s ease;
+
+                &:hover {
+                    border-color: $color-background-brand;
+                    transform: translateY(-6px);
+                }
+
+                .pricing-plan-description {
+                    margin: 10px 0;
+                }
+
+                .pricing-plan-price {
+                    margin: 20px 0;
+                    transition: opacity 0.3s ease;
+
+                    &.active {
+                        display: block;
+                        opacity: 1;
+                    }
+
+                    &:not(.active) {
+                        display: none;
+                        opacity: 0;
+                    }
+
+                    small {
+                        display: block;
+                        margin-top: 10px;
+                        padding-left: 4px;
+                    }
+                }
+
+                .pricing-plan-btn {
+                    display: block;
+                    margin: 0 auto;
+                    border: 2px solid $color-border;
+                }
+
+                .pricing-plan-features {
+                    margin-top: 35px;
+                    padding: 0;
+                    font-family: $font-secondary;
+                    color: $color-text-body;
+
+                    li {
+                        padding-left: 40px;
+                        background-image: url(../assets/icons/checkmark.svg);
+                        background-repeat: no-repeat;
+                        background-position: left;
+
+                        &:not(:first-child) {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@mixin text-style($font-weight, $font-size, $line-height) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+.t-title-xl {
+    @include text-style(700, 64px, 78px);
+
+    @media (max-width: $breakpoint-mobile) {
+        @include text-style(700, 54px, 60px);
+    }
+}
+
+.t-title-lg {
+    @include text-style(600, 54px, 60px);
+
+    @media (max-width: $breakpoint-mobile) {
+        @include text-style(600, 48px, 60px);
+    }
+}
+
+.t-title-md {
+    @include text-style(700, 48px, 54px);
+}
+
+.t-title-sm {
+    @include text-style(600, 22px, 24px);
+}
+
+.t-subtitle {
+    @include text-style(400, 24px, 24px);
+}
+
+.t-body-lg {
+    @include text-style(700, 18px, 24px);
+}
+
+.t-body-md {
+    @include text-style(400, 16px, 28px);
+}
+
+.t-body-sm {
+    @include text-style(300, 14px, 18px);
+}
+
+.t-label-lg {
+    @include text-style(600, 42px, 32px);
+}
+
+.t-label-md {
+    @include text-style(600, 16px, 32px);
+}
+
+.t-label-sm {
+    @include text-style(500, 10px, 10px);
+}
+
+.t-click-lg {
+    @include text-style(600, 30px, 40px);
+}
+
+.t-click-md {
+    @include text-style(500, 16px, 22px);
+}

@@ -1,0 +1,82 @@
+.control {
+    font-family: $font-primary;
+    color: $color-text;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:focus-visible {
+        @include focus-style;
+    }
+}
+
+.btn {
+    height: 48px;
+    border-radius: 10px;
+
+    &:active {
+        transform: scale(0.985);
+    }
+}
+
+.btn-sm {
+    width: 60px;
+}
+
+.btn-md {
+    width: 180px;
+}
+
+.btn-lg {
+    width: 240px;
+}
+
+.btn-primary {
+    color: $color-text;
+    border: 1px solid $color-border;
+
+    &:hover {
+        background-color: $color-background-hover;
+        box-shadow: $shadow;
+    }
+}
+
+.btn-red {
+    color: $color-text-alt;
+    background-color: $color-background-brand;
+    border: none;
+    box-shadow: $shadow-brand;
+
+    &:hover {
+        background-color: $color-background-brand-hover;
+        box-shadow: $shadow-brand-hover;
+    }
+}
+
+.tab {
+    border: none;
+}
+
+.get-in-touch-button {
+    box-shadow: none;
+
+    &:hover {
+        box-shadow: $shadow-brand-light-hover;
+    }
+
+    .get-in-touch-button-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 8px;
+        height: 100%;
+        padding: 0px 16px;
+        font-family: $font-primary;
+        color: $color-text-alt;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

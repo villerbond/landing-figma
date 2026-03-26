@@ -1,0 +1,24 @@
+.cta {
+    background-color: $color-background;
+
+    .cta-container {
+        padding: 80px 7vw;
+
+        .cta-wrapper {
+            position: relative;
+            min-height: 430px;
+            padding: 90px 0;
+            text-align: center;
+            background-color: $color-background-alt;
+            border-radius: 16px;
+
+            h2 {
+                max-width: 900px;
+                margin: 0 auto;
+                padding-bottom: 40px;
+                font-family: $font-primary;
+                color: $color-text-heading;
+            }
+        }
+    }
+}

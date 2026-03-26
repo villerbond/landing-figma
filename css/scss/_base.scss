@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: $color-text;
+    cursor: pointer;
+}
+
+a:focus-visible,
+input:focus-visible {
+    @include focus-style;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}

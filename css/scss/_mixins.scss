@@ -1,0 +1,5 @@
+@mixin focus-style {
+    outline: 2px solid $color-border;
+    outline-offset: 4px;
+    transition: outline 0s;
+}

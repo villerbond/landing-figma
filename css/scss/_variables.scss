@@ -1,0 +1,45 @@
+$color-text: #000000;
+$color-text-alt: #ffffff;
+$color-text-dark: #18191f;
+$color-text-light: #e6e6e6;
+$color-text-brand: #b00000;
+$color-text-brand-light: #d8a2a2;
+$color-text-heading: #2e2e2e;
+$color-text-body: #808080;
+$color-text-add-info: #969bab;
+
+$color-background: #ffffff;
+$color-background-alt: #f7fafe;
+$color-background-light: #d3d3d3;
+$color-background-hover: #f0f0f0;
+$color-background-brand: #b00000;
+$color-background-brand-hover: #a81818;
+
+$color-border: #000000;
+$color-border-alt: #ffffff;
+$color-border-light: #c4c4c4;
+$color-border-brand: #b00000;
+$color-border-brand-light: #d8a2a2;
+
+$color-inactive: #d6d4d4;
+$color-divider: #dad8d8;
+$color-appendix: #ffe87a;
+$color-overlay: rgba(0, 0, 0, 0.5);
+
+$shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+$shadow-inner: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+$shadow-card: 0px 10px 20px rgba(41, 41, 42, 0.07);
+$shadow-brand: 0px 0px 64px rgba(176, 0, 0, 0.3);
+$shadow-brand-light-hover: 0px 0px 24px rgba(176, 0, 0, 0.4);
+$shadow-brand-hover: 0px 0px 64px rgba(176, 0, 0, 0.5);
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Inter", sans-serif;
+
+$header-gap: clamp(1px, 8vw, 116px);
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet-sm: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-laptop: 1280px;
+$breakpoint-desktop: 1440px;

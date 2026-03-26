@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/images/Main-logo.svg" />
+        <title>Landing Project</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link href="./css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header-container">
+                <a href="#">
+                    <img
+                        src="./assets/images/Main-logo.svg"
+                        alt="Header logo"
+                        class="header-logo"
+                    />
+                </a>
+                <div class="header-links">
+                    <nav class="header-nav">
+                        <ul class="header-nav-list">
+                            <li>
+                                <a
+                                    class="t-click-md header-link header-main-link active"
+                                    >Our services</a
+                                >
+                            </li>
+                            <li>
+                                <a class="t-click-md header-link">About</a>
+                            </li>
+                            <li>
+                                <a class="t-click-md header-link">Blog&News</a>
+                            </li>
+                            <li>
+                                <a class="t-click-md header-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-utility">
+                        <a class="t-click-md header-link">Account</a>
+                        <a
+                            class="t-click-md header-link header-phone-link divider-item"
+                        >
+                            <img
+                                src="./assets/icons/phone-main.svg"
+                                alt="Phone icon"
+                                class="header-phone-icon"
+                            />
+                            <span>+2349067322844</span>
+                        </a>
+                    </div>
+                </div>
+                <button
+                    class="control btn btn-sm btn-red burger-btn"
+                    id="burgerBtn"
+                >
+                    <span class="burger-line" aria-hidden="true"></span>
+                    <span class="burger-line" aria-hidden="true"></span>
+                    <span class="burger-line" aria-hidden="true"></span>
+                </button>
+                <nav class="burger-menu">
+                    <ul class="burger-menu-list">
+                        <li class="burger-menu-li burger-menu-li-margin">
+                            <a class="t-click-md burger-link">Our services</a>
+                        </li>
+                        <li class="burger-menu-li">
+                            <a class="t-click-md burger-link">About</a>
+                        </li>
+                        <li class="burger-menu-li">
+                            <a class="t-click-md burger-link">Blog&News</a>
+                        </li>
+                        <li class="burger-menu-li burger-menu-li-margin">
+                            <a class="t-click-md burger-link">Contact</a>
+                        </li>
+                        <li class="burger-menu-li">
+                            <a class="t-click-md burger-link">Account</a>
+                        </li>
+                        <li class="burger-menu-li">
+                            <a class="t-click-md burger-link header-phone-link"
+                                ><img
+                                    src="./assets/icons/phone-invert.svg"
+                                    alt="Phone icon"
+                                    class="header-phone-icon"
+                                />
+                                <span>+2349067322844</span></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger-overlay"></div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-info">
+                    <div class="hero-tabs" role="tablist">
+                        <button class="t-click-md control tab hero-tab active" role="tab">
+                            Hosting
+                        </button>
+                        <button class="t-click-md control tab hero-tab" role="tab">
+                            Domain
+                        </button>
+                        <button class="t-click-md control tab hero-tab" role="tab">
+                            SEO
+                        </button>
+                        <button class="t-click-md control tab hero-tab" role="tab">
+                            Email
+                        </button>
+                    </div>
+                    <div class="hero-text-container">
+                        <div class="hero-text active" role="tabpanel">
+                            <h1 class="t-title-xl">
+                                Premium Web Hosting for Your Website
+                            </h1>
+                            <p class="t-body-md">
+                                Blazing fast web hosting for individuals and
+                                businesses of all sizes backed by 24x7x365
+                                Support.
+                            </p>
+                        </div>
+                        <div class="hero-text" role="tabpanel">
+                            <h1 class="t-title-xl">
+                                Find Your Perfect Domain Name
+                            </h1>
+                            <p class="t-body-md">
+                                Secure your online identity with premium domain
+                                registration and management tools for your
+                                business or personal brand.
+                            </p>
+                        </div>
+                        <div class="hero-text" role="tabpanel">
+                            <h1 class="t-title-xl">
+                                Boost Your Search Engine Rankings
+                            </h1>
+                            <p class="t-body-md">
+                                Professional SEO tools and services to increase
+                                your visibility and drive more organic traffic
+                                to your website.
+                            </p>
+                        </div>
+                        <div class="hero-text" role="tabpanel">
+                            <h1 class="t-title-xl">
+                                Professional Business Email Solutions
+                            </h1>
+                            <p class="t-body-md">
+                                Custom email addresses with advanced security
+                                and collaboration features to enhance your
+                                professional communication.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="t-click-md control btn btn-md btn-red">
+                            Create an Account
+                        </button>
+                        <button
+                            class="t-click-md control btn btn-md btn-primary"
+                        >
+                            <a href="#pricing">Choose your plan</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img
+                        src="./assets/images/hero-image.jpg"
+                        alt="Working woman"
+                    />
+                    <div
+                        class="decor-triangle decor-triangle-1 decor-triangle-1-hero"
+                        aria-hidden="true"
+                    ></div>
+                    <div
+                        class="decor-triangle decor-triangle-2 decor-triangle-2-hero"
+                        aria-hidden="true"
+                    ></div>
+                    <div
+                        class="decor-triangle decor-triangle-3 decor-triangle-3-hero"
+                        aria-hidden="true"
+                    ></div>
+                </div>
+            </div>
+        </section>
+        <section class="whyus">
+            <div class="container whyus-container">
+                <div class="whyus-top">
+                    <div class="whyus-text">
+                        <h2 class="t-title-md">True Cloud Web Hosting</h2>
+                        <p class="t-body-md">
+                            True Cloud Web Hosting All of the hosting packages
+                            we offer are deployed instantly on our SSD powered
+                            cloud. We don't use dedicated servers that operate
+                            on single pieces of hardware. Our entire
+                            infrastructure is built to be reliable, secure, and
+                            scalable.
+                        </p>
+                    </div>
+                    <div class="whyus-logos">
+                        <img
+                            src="./assets/images/cPanel-logo.svg"
+                            alt="cPanel logo"
+                        />
+                        <img
+                            src="./assets/images/Imunify360-logo.svg"
+                            alt="imunify360 logo"
+                        />
+                        <img
+                            src="./assets/images/litespeed-logo.svg"
+                            alt="LiteSpeed logo"
+                        />
+                        <img
+                            src="./assets/images/Softaculous-logo.svg"
+                            alt="Softaculous logo"
+                        />
+                        <img
+                            src="./assets/images/WordPress-logo.svg"
+                            alt="WordPress logo"
+                        />
+                        <img
+                            src="./assets/images/CloudFlare-logo.svg"
+                            alt="CloudFlare logo"
+                        />
+                    </div>
+                </div>
+                <div class="whyus-features">
+                    <div class="whyus-feature">
+                        <img src="./assets/images/Uptime.svg" alt="Uptime" />
+                        <h3 class="t-title-sm">99.9% Uptime</h3>
+                        <p class="t-body-sm">
+                            We Keep Your Web build Online 24x7x365. Downtime not
+                            only costs you lost visitors but also damages your
+                            reputation and search engine rankings.
+                        </p>
+                    </div>
+                    <div class="whyus-feature">
+                        <img src="./assets/images/Speed.svg" alt="Speed" />
+                        <h3 class="t-title-sm">Blazing Fast Web Hosting</h3>
+                        <p class="t-body-sm">
+                            We deliver lightning-fast loading speeds that keep
+                            visitors engaged. Slow websites not only frustrate
+                            users but also negatively impact your conversion
+                            rates and search engine performance.
+                        </p>
+                    </div>
+                    <div class="whyus-feature">
+                        <img src="./assets/images/SSL.svg" alt="SSL" />
+                        <h3 class="t-title-sm">Free SSL Certificates</h3>
+                        <p class="t-body-sm">
+                            We provide free SSL security for all your websites.
+                            Lack of encryption not only risks data breaches but
+                            also damages customer trust and your search engine
+                            visibility.
+                        </p>
+                    </div>
+                    <div class="whyus-feature">
+                        <img src="./assets/images/Support.svg" alt="Support" />
+                        <h3 class="t-title-sm">24x7 Friendly Support</h3>
+                        <p class="t-body-sm">
+                            We offer round-the-clock assistance from expert
+                            technicians. Unresolved issues not only cause
+                            operational delays but also affect your business
+                            productivity and growth potential.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pricing" class="pricing">
+            <div class="container pricing-container">
+                <h2 class="t-title-lg pricing-title">
+                    Ready to get started with Lemon Wares?
+                </h2>
+                <p class="t-subtitle pricing-subtitle">
+                    Choose the package that suits you
+                </p>
+                <div class="pricing-toggle">
+                    <span class="t-subtitle pricing-toggle-label">Monthly</span>
+                    <label class="toggle-switch">
+                        <input class="toggle-switch-input pricing-toggle-switch-input" type="checkbox" />
+                        <span class="toggle-switch-inner"></span>
+                    </label>
+                    <div class="pricing-toggle-label-wrapper">
+                        <span class="t-subtitle pricing-toggle-label"
+                            >Yearly</span
+                        >
+                        <span class="t-label-sm pricing-toggle-discount"
+                            >20% discount</span
+                        >
+                    </div>
+                </div>
+                <div class="pricing-tabs">
+                    <button
+                        class="t-click-lg control tab pricing-tab pricing-tab-basic active"
+                    >
+                        Basic
+                    </button>
+                    <button
+                        class="t-click-lg control tab pricing-tab pricing-tab-premium"
+                    >
+                        Premium
+                    </button>
+                </div>
+                <div class="pricing-plans-container">
+                    <div class="pricing-plans pricing-plans-basic active">
+                        <div class="pricing-plan">
+                            <h3 class="t-title-sm">Starter</h3>
+                            <p class="t-body-sm pricing-plan-description">
+                                Perfect for launching your first website with
+                                essential hosting features to get your online
+                                presence started quickly and affordably.
+                            </p>
+                            <p class="pricing-plan-price active">
+                                <span class="t-label-lg">$2.80</span>
+                                <small class="t-body-sm">Per month</small>
+                            </p>
+                            <p class="pricing-plan-price">
+                                <span class="t-label-lg">$26.80</span>
+                                <small class="t-body-sm">Per year</small>
+                            </p>
+                            <button
+                                class="t-click-md control btn btn-lg pricing-plan-btn"
+                            >
+                                Choose this Plan
+                            </button>
+                            <ul class="t-body-lg pricing-plan-features">
+                                <li>2GB SSD</li>
+                                <li>10GB Bandwidth</li>
+                                <li>15 Email Accounts</li>
+                                <li>Unlimited Database</li>
+                                <li>4 Subdomains</li>
+                                <li>1 Parked Domain</li>
+                                <li>2 Websites</li>
+                                <li>Free SSL</li>
+                                <li>Softaculous</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-plan">
+                            <h3 class="t-title-sm">Standard</h3>
+                            <p class="t-body-sm pricing-plan-description">
+                                Ideal for growing businesses needing more power
+                                and resources to handle increased traffic and
+                                multiple projects efficiently.
+                            </p>
+                            <p class="pricing-plan-price active">
+                                <span class="t-label-lg">$4.20</span>
+                                <small class="t-body-sm">Per month</small>
+                            </p>
+                            <p class="pricing-plan-price">
+                                <span class="t-label-lg">$40.30</span>
+                                <small class="t-body-sm">Per year</small>
+                            </p>
+                            <button
+                                class="t-click-md control btn btn-lg pricing-plan-btn"
+                            >
+                                Choose this Plan
+                            </button>
+                            <ul class="t-body-lg pricing-plan-features">
+                                <li>5GB SSD</li>
+                                <li>25GB Bandwidth</li>
+                                <li>30 Email Accounts</li>
+                                <li>Unlimited Database</li>
+                                <li>10 Subdomains</li>
+                                <li>3 Parked Domains</li>
+                                <li>5 Websites</li>
+                                <li>Free SSL</li>
+                                <li>Softaculous</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-plan">
+                            <h3 class="t-title-sm">Supreme</h3>
+                            <p class="t-body-sm pricing-plan-description">
+                                Maximum performance for established businesses
+                                and developers requiring top-tier resources and
+                                unlimited expansion capabilities.
+                            </p>
+                            <p class="pricing-plan-price active">
+                                <span class="t-label-lg">$7.00</span>
+                                <small class="t-body-sm">Per month</small>
+                            </p>
+                            <p class="pricing-plan-price">
+                                <span class="t-label-lg">$67.20</span>
+                                <small class="t-body-sm">Per year</small>
+                            </p>
+                            <button
+                                class="t-click-md control btn btn-lg pricing-plan-btn"
+                            >
+                                Choose this Plan
+                            </button>
+                            <ul class="t-body-lg pricing-plan-features">
+                                <li>10GB SSD</li>
+                                <li>50GB Bandwidth</li>
+                                <li>Unlimited Email Accounts</li>
+                                <li>Unlimited Database</li>
+                                <li>25 Subdomains</li>
+                                <li>5 Parked Domain</li>
+                                <li>Unlimited Websites</li>
+                                <li>Free SSL</li>
+                                <li>Softaculous</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pricing-plans pricing-plans-premium">
+                        <div class="pricing-plan">
+                            <h3 class="t-title-sm">Business Pro</h3>
+                            <p class="t-body-sm pricing-plan-description">
+                                Advanced hosting solution for established
+                                businesses requiring enhanced performance,
+                                security, and priority support for
+                                mission-critical websites.
+                            </p>
+                            <p class="pricing-plan-price active">
+                                <span class="t-label-lg">$12.99</span>
+                                <small class="t-body-sm">Per month</small>
+                            </p>
+                            <p class="pricing-plan-price">
+                                <span class="t-label-lg">$124.70</span>
+                                <small class="t-body-sm">Per year</small>
+                            </p>
+                            <button
+                                class="t-click-md control btn btn-lg pricing-plan-btn"
+                            >
+                                Choose this Plan
+                            </button>
+                            <ul class="t-body-lg pricing-plan-features">
+                                <li>50GB NVMe SSD</li>
+                                <li>Unlimited Bandwidth</li>
+                                <li>Unlimited Email Accounts</li>
+                                <li>Unlimited Database</li>
+                                <li>50 Subdomains</li>
+                                <li>10 Parked Domain</li>
+                                <li>Unlimited Websites</li>
+                                <li>Free SSL & Security Suite</li>
+                                <li>Softaculous Premium</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-plan">
+                            <h3 class="t-title-sm">Enterprise Cloud</h3>
+                            <p class="t-body-sm pricing-plan-description">
+                                Scalable cloud infrastructure for high-traffic
+                                enterprises with intelligent load balancing,
+                                advanced caching, and dedicated resources.
+                            </p>
+                            <p class="pricing-plan-price active">
+                                <span class="t-label-lg">$29.99</span>
+                                <small class="t-body-sm">Per month</small>
+                            </p>
+                            <p class="pricing-plan-price">
+                                <span class="t-label-lg">$287.90</span>
+                                <small class="t-body-sm">Per year</small>
+                            </p>
+                            <button
+                                class="t-click-md control btn btn-lg pricing-plan-btn"
+                            >
+                                Choose this Plan
+                            </button>
+                            <ul class="t-body-lg pricing-plan-features">
+                                <li>100GB NVMe SSD</li>
+                                <li>Unlimited Bandwidth</li>
+                                <li>Unlimited Email Accounts</li>
+                                <li>Unlimited Database</li>
+                                <li>Unlimited Subdomains</li>
+                                <li>25 Parked Domains</li>
+                                <li>Unlimited Websites</li>
+                                <li>Free SSL & Advanced Security</li>
+                                <li>Softaculous Premium</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-plan">
+                            <h3 class="t-title-sm">Ultimate Power</h3>
+                            <p class="t-body-sm pricing-plan-description">
+                                Maximum power hosting with dedicated resources,
+                                premium caching, and expert optimization for
+                                lightning-fast enterprise applications.
+                            </p>
+                            <p class="pricing-plan-price active">
+                                <span class="t-label-lg">$49.99</span>
+                                <small class="t-body-sm">Per month</small>
+                            </p>
+                            <p class="pricing-plan-price">
+                                <span class="t-label-lg">$479.90</span>
+                                <small class="t-body-sm">Per year</small>
+                            </p>
+                            <button
+                                class="t-click-md control btn btn-lg pricing-plan-btn"
+                            >
+                                Choose this Plan
+                            </button>
+                            <ul class="t-body-lg pricing-plan-features">
+                                <li>200GB NVMe SSD</li>
+                                <li>Unlimited Premium Bandwidth</li>
+                                <li>Unlimited Email Accounts</li>
+                                <li>Unlimited Databases</li>
+                                <li>Unlimited Subdomains</li>
+                                <li>50 Parked Domains</li>
+                                <li>Unlimited Websites</li>
+                                <li>Free SSL & Enterprise Security</li>
+                                <li>Softaculous Premium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container testimonials-container">
+                <div class="testimonials-cards">
+                    <div class="testimonials-cards-header">
+                        <h2 class="t-title-md">
+                            Real Stories from Real Customers
+                        </h2>
+                        <p class="t-body-md">Get inspired by these stories.</p>
+                    </div>
+                    <div class="testimonials-card testimonials-card-1">
+                        <img
+                            src="./assets/images/CLI-logo.svg"
+                            alt="CLI logo"
+                        />
+                        <p class="t-body-md testimonials-card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit ut aliquam, purus sit amet luctus venenatis,
+                            lectus magna fringilla urna, porttitor rhoncus dolor
+                            purus non enim praesent elem
+                        </p>
+                        <p class="t-body-lg testimonials-card-author">
+                            Floyd Miles
+                        </p>
+                        <p class="t-label-md testimonials-card-post">
+                            Vice President, CLI
+                        </p>
+                    </div>
+                    <div class="testimonials-card testimonials-card-2">
+                        <img
+                            src="./assets/images/JPNL-logo.svg"
+                            alt="JPNL logo"
+                        />
+                        <p class="t-body-md testimonials-card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit ut aliquam, purus sit amet luctus venenatis,
+                            lectus magna fringilla urna, porttitor rhoncus dolor
+                            purus non enim praesent elem
+                        </p>
+                        <p class="t-body-lg testimonials-card-author">
+                            Jane Cooper
+                        </p>
+                        <p class="t-label-md testimonials-card-post">
+                            CEO, JPNL
+                        </p>
+                    </div>
+                    <div class="testimonials-card testimonials-card-3">
+                        <img
+                            src="./assets/images/LeeveOnBranding-logo.svg"
+                            alt="LeeveOn Branding logo"
+                        />
+                        <p class="t-body-md testimonials-card-text">
+                            LemonWares saved our time in Hosting my company
+                            page.
+                        </p>
+                        <p class="t-body-lg testimonials-card-author">
+                            Kristin Watson
+                        </p>
+                        <p class="t-label-md testimonials-card-post">
+                            Co-Founder, LeeveOn Branding
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonials-partners">
+                    <div class="testimonials-partners-text">
+                        <h2 class="t-title-md">
+                            We serve over 100 Nigerian Websites
+                        </h2>
+                        <p class="t-body-md">
+                            Connect LemonWares with your favourite tools that
+                            you use daily and keep things on track.
+                        </p>
+                    </div>
+                    <div class="testimonials-partners-logos">
+                        <img
+                            src="./assets/images/JPNL-logo.svg"
+                            alt="JPNL logo"
+                        />
+                        <img
+                            src="./assets/images/KoraneScents-logo.svg"
+                            alt="Korane Scents logo"
+                        />
+                        <img
+                            src="./assets/images/NadineGhaida-logo.svg"
+                            alt="NADINE GHAIDA logo"
+                        />
+                        <img
+                            src="./assets/images/LeeveOnBranding-logo.svg"
+                            alt="LeeveOn Branding logo"
+                        />
+                        <img
+                            src="./assets/images/JrangoGlasses-logo.svg"
+                            alt="JRANGO GLASSES logo"
+                        />
+                        <img
+                            src="./assets/images/CLI-logo.svg"
+                            alt="CLI logo"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container cta-container">
+                <div class="cta-wrapper">
+                    <h2 class="t-title-lg">
+                        We're here to make your website awesome.
+                    </h2>
+                    <button
+                        class="t-click-md control btn btn-lg btn-red get-in-touch-button"
+                    >
+                        <div class="get-in-touch-button-inner">
+                            <img
+                                src="./assets/icons/whatsapp.svg"
+                                alt="WhatsApp icon"
+                            />
+                            <span>Get in touch with us</span>
+                        </div>
+                    </button>
+                    <div
+                        class="decor-triangle decor-triangle-1 decor-triangle-1-cta"
+                        aria-hidden="true"
+                    ></div>
+                    <div
+                        class="decor-triangle decor-triangle-2 decor-triangle-2-cta"
+                        aria-hidden="true"
+                    ></div>
+                    <div
+                        class="decor-triangle decor-triangle-3 decor-triangle-3-cta"
+                        aria-hidden="true"
+                    ></div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-info">
+                    <div class="footer-info-about">
+                        <img
+                            src="./assets/images/Main-logo-footer.svg"
+                            alt="Main logo"
+                        />
+                        <p class="t-body-md">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit ut aliquam, purus sit amet luctus venenatis,
+                            lectus magna fringilla urna, porttitor rhoncus dolor
+                            purus non enim praesent elem
+                        </p>
+                    </div>
+                    <div class="footer-info-links">
+                        <h4 class="t-body-lg">Service</h4>
+                        <ul>
+                            <li><a class="t-click-md">Domain</a></li>
+                            <li>
+                                <a class="t-click-md">Shared Hosting</a>
+                            </li>
+                            <li>
+                                <a class="t-click-md">Cloud Hosting</a>
+                            </li>
+                            <li>
+                                <a class="t-click-md">Private Hosting</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-info-links">
+                        <h4 class="t-body-lg">Hosting</h4>
+                        <ul>
+                            <li>
+                                <a class="t-click-md">Cheap Hosting</a>
+                            </li>
+                            <li>
+                                <a class="t-click-md">Hosting WordPress</a>
+                            </li>
+                            <li>
+                                <a class="t-click-md">Email Hosting</a>
+                            </li>
+                            <li>
+                                <a class="t-click-md">Hosting Unlimited</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-info-links">
+                        <h4 class="t-body-lg">Company</h4>
+                        <ul>
+                            <li><a class="t-click-md">About</a></li>
+                            <li><a class="t-click-md">Career</a></li>
+                            <li>
+                                <a class="t-click-md">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-info-links">
+                        <h4 class="t-body-lg">Help</h4>
+                        <ul>
+                            <li><a class="t-click-md">FAQ</a></li>
+                            <li>
+                                <a class="t-click-md">Help support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="t-body-md">
+                        Built by Jeremiah with
+                        <img src="./assets/icons/love.svg" alt="love" /> in
+                        Lagos. Copyright 2021
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

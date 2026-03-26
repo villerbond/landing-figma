@@ -1,0 +1,13 @@
+.divider-item {
+    position: relative;
+
+    &:not(:first-child)::before {
+        content: "";
+        position: absolute;
+        left: -30px;
+        width: 1px;
+        height: 20px;
+        background-color: $color-divider;
+        pointer-events: none;
+    }
+}

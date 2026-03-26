@@ -1,0 +1,171 @@
+.testimonials {
+    background-color: $color-background;
+
+    .testimonials-container {
+        padding: 30px 8vw;
+
+        .testimonials-cards {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1015px;
+            min-height: 800px;
+            margin: 0 auto;
+            background: url("../assets/icons/quotemark-red.svg") no-repeat;
+
+            @media (max-width: $breakpoint-laptop) {
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .testimonials-cards-header {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                max-width: 490px;
+                padding-top: 5.5%;
+                padding-left: 9.5%;
+                font-family: $font-secondary;
+
+                h2 {
+                    color: $color-text-dark;
+                }
+
+                p {
+                    color: $color-text-dark;
+                }
+            }
+
+            .testimonials-card {
+                position: absolute;
+                padding: 40px 35px 40px 65px;
+                font-family: $font-secondary;
+                background-color: $color-background;
+                border-radius: 8px;
+                box-shadow: $shadow-card;
+
+                @media (max-width: $breakpoint-laptop) {
+                    position: relative;
+                }
+
+                img {
+                    width: 120px;
+                    object-fit: cover;
+                }
+
+                .testimonials-card-text {
+                    position: relative;
+                    margin: 12px 0;
+                    color: $color-text;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: -32px;
+                        width: 16px;
+                        height: 14px;
+                        background: url("../assets/icons/quotemark-blue.svg")
+                            no-repeat;
+                    }
+                }
+
+                .testimonials-card-author {
+                    margin: 0;
+                    color: $color-text-dark;
+                }
+
+                .testimonials-card-post {
+                    margin: 0;
+                    color: $color-text-add-info;
+                }
+
+                &.testimonials-card-1 {
+                    left: 180px;
+                    top: 280px;
+                    max-width: 350px;
+
+                    @media (max-width: $breakpoint-laptop) {
+                        left: 0;
+                        top: 0;
+                    }
+
+                    img {
+                        height: 50px;
+                    }
+                }
+
+                &.testimonials-card-2 {
+                    left: 570px;
+                    top: 100px;
+                    max-width: 445px;
+
+                    @media (max-width: $breakpoint-laptop) {
+                        left: 0;
+                        top: 0;
+                    }
+
+                    img {
+                        height: 70px;
+                    }
+                }
+
+                &.testimonials-card-3 {
+                    left: 570px;
+                    top: 525px;
+                    max-width: 350px;
+
+                    @media (max-width: $breakpoint-laptop) {
+                        left: 0;
+                        top: 0;
+                    }
+
+                    img {
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+        .testimonials-partners {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 85px;
+
+            @media (max-width: $breakpoint-laptop) {
+                justify-content: space-around;
+            }
+
+            .testimonials-partners-text {
+                max-width: 445px;
+                padding: 20px 0;
+                font-family: $font-secondary;
+
+                h2 {
+                    color: $color-text-dark;
+
+                    @media (max-width: $breakpoint-mobile) {
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    margin-top: 20px;
+                    color: $color-text-dark;
+                }
+            }
+
+            .testimonials-partners-logos {
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: space-between;
+                max-width: 470px;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+    }
+}

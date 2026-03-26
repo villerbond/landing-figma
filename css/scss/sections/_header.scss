@@ -1,0 +1,81 @@
+.header {
+    background-color: $color-background;
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $header-gap;
+        min-height: 60px;
+        padding: 40px min(140px, 8vw);
+
+        @media (max-width: $breakpoint-tablet-sm) {
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            width: 90px;
+            height: 60px;
+        }
+
+        .header-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: $header-gap;
+            row-gap: 18px;
+
+            @media (max-width: $breakpoint-tablet-sm) {
+                display: none;
+            }
+
+            .header-nav {
+                .header-nav-list {
+                    display: flex;
+                    align-items: center;
+                    gap: 60px;
+                    margin: 0;
+                    padding: 0;
+
+                    .header-main-link {
+                        margin-right: clamp(1px, 3.5vw, 56px);
+
+                        @media (max-width: $breakpoint-laptop) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+
+            .header-utility {
+                display: flex;
+                align-items: center;
+                gap: 60px;
+                margin: 0;
+                padding: 0;
+
+                .header-phone-link {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    width: 165px;
+
+                    .header-phone-icon {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+
+            .header-link {
+                font-family: $font-primary;
+                border-bottom: 2px solid transparent;
+                transition: border-color 0.4s ease;
+
+                &:hover {
+                    border-color: $color-background-brand;
+                }
+            }
+        }
+    }
+}
